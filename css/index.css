@@ -281,7 +281,7 @@ header {
     
     .cta {
         display:flex;
-        justify-content:center;
+        align-content:center;
         margin-bottom: 40px;
     }
     .cta-text {
