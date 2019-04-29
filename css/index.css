@@ -325,8 +325,7 @@ header {
     }
     .bottom-content .text-content {
         width: 100%;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding:40px 10px 0px;
     }
     .bottom-content {
         border-bottom: 1px solid black;
