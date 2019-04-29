@@ -151,13 +151,12 @@ header {
 }
 
 /* Tablet */
-@media(max-width:800px) {
+@media(max-width: 800px) {
     .container{
         background: lightblue;
     }
     header nav {
         display: flex;
-        flex-grow: 1;
         justify-content:space-between;
     }
     header {
@@ -167,7 +166,7 @@ header {
     }
     
     .logo {
-        margin-left: 130px;
+        
     }
     
     .cta-text h1 {
@@ -176,7 +175,7 @@ header {
     
     .cta {
         display:flex;
-        align-items: center;
+        /* align-items: center; */
     }
     .cta-text {
         text-align: center;
@@ -231,7 +230,7 @@ header {
         margin-top: 10px;
     }
   
-
+}
 /* Mobile */
 
 @media(max-width:500px) {
