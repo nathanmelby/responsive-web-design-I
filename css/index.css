@@ -1,4 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -64,17 +63,11 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Desktop */
 
 .container {
-	max-width: 800px;
+	width: 876px;
 	margin: 0 auto;
-}
-
-@media(max-width: 500px) {
-    .container {
-        background: gray;
-    }
 }
 
 header nav {
@@ -83,7 +76,7 @@ header nav {
 	justify-content:space-between;
 }
 header {
-	margin: 35px 0px 50px auto;
+	margin: 35px 0px 50px;
 	display:flex;
 	align-items: center;
 }
@@ -91,8 +84,6 @@ header {
 .logo {
 	margin-left: 130px;
 }
-
-/* This is the section for Homepage */
 
 .cta-text h1 {
 	font-size: 50pt;
@@ -104,7 +95,7 @@ header {
 }
 .cta-text {
 	
-	margin-left: 100px auto;
+	margin-left: 100px;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -126,7 +117,8 @@ header {
 }
 .top-content {
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .top-content .text-content {
 	width:49%;
@@ -134,10 +126,11 @@ header {
 }
 
 .bottom-content {
-	display:flex;
+    display:flex;
+    justify-content:space-between;
 }
 .bottom-content .text-content {
-	width: 33%;
+	width: 32%;
 	padding-top: 40px;
 	padding-bottom: 40px;
 }
@@ -157,69 +150,95 @@ header {
 	margin-top: 10px;
 }
 
+/* Tablet */
+@media(max-width:800px) {
+    .container{
+        background: lightblue;
+    }
+    header nav {
+        display: flex;
+        flex-grow: 1;
+        justify-content:space-between;
+    }
+    header {
+        margin: 35px 0px 50px;
+        display:flex;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-left: 130px;
+    }
+    
+    .cta-text h1 {
+        font-size: 50pt;
+    }
+    
+    .cta {
+        display:flex;
+        align-items: center;
+    }
+    .cta-text {
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .cta-text .button {
+        background: white;
+        padding: 5px 40px 5px 40px;
+        font-size: 24px;
+    }
+    .cta img {
+        display: none;
+    }
+    
+    .top-content {
+        border-top: 1px solid black;
+        margin-bottom: 40px;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .top-content .text-content {
+        width:49%;
+        padding:40px 10px 0px;
+    }
+    
+    .bottom-content {
+        display:flex;
+        justify-content:space-between;
+    }
+    .bottom-content .text-content {
+        width: 32%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .bottom-content {
+        border-bottom: 1px solid black;
+        
+    }
+    .cta {
+        margin-bottom: 40px;
+    }
+    
+    .contact{
+        margin-top:40px;
+    }
+    
+    .contact p{
+        margin-top: 10px;
+    }
+  
 
-/* This is the CSS for SECTION */
-.hero h4{
-	font-size:20pt;
-}
-.services-header-img{
-	margin-bottom: 40px;
-}
+/* Mobile */
 
-.main{
-	display:flex;
-	flex-wrap: wrap;
-	border-top: 1px solid black;
-	margin:40px 0px 40px;
-	justify-content: space-between;
+@media(max-width:500px) {
+    .container{
+        background: gray;
+    }
+.cta img {
+    display:none;
 }
-.card {
-	display: flex;
-	flex-wrap: wrap;
-	width:420px;
-	height:250px;
-	border: 1px solid black;
-	background: lightgray;
-	padding: 10px 20px 20px;
-	margin: 25px 0px 25px;
 }
-
-button {
-	width: 150px;
-	font-size: 11pt;
-}
-
-.services {
-	margin-top:40px;
-	border-top: 3px solid black;
-	display:flex;
-	align-content: column;
-
-}
-
-.facts{
-	margin-top:40px;
-	height:250px;
-	width:50%;
-
-	display:flex;
-	flex-direction: column;
-	align-content: space-between;
-	
-}
-
-ul {
-	margin:30px 0px 0px 20px;
-	line-height: 30px;
-}
-.services-info-img {
-	width:50%;
-	margin-top:40px;
-}
-
-footer{
-	display:flex;
-	justify-content:center;
-	margin-top: 100px;
-}
-
