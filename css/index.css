@@ -277,16 +277,19 @@ header {
     
     .cta-text h1 {
         font-size: 50pt;
+      
     }
     
     .cta {
         display:flex;
-        align-content:center;
         margin-bottom: 40px;
+       
     }
     .cta-text {
         text-align: center;
         vertical-align: middle;
+      
+        
     }
     
     .cta-text .button {
