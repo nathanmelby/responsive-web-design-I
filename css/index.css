@@ -193,6 +193,8 @@ header {
     }
     .cta img {
         display: none;
+        width: 0px;
+        height: 0px;
     }
     
     .top-content {
@@ -296,6 +298,8 @@ header {
     }
     .cta img {
         display: none;
+        width: 0px;
+        height: 0px;
     }
     
     .top-content {
