@@ -179,7 +179,8 @@ header {
     
     .cta {
         display:flex;
-        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
     }
     .cta-text {
         text-align: center;
@@ -193,8 +194,7 @@ header {
     }
     .cta img {
         display: none;
-        width: 0px;
-        height: 0px;
+        
     }
     
     .top-content {
@@ -228,9 +228,6 @@ header {
     .bottom-content {
         border-bottom: 1px solid black;
         
-    }
-    .cta {
-        margin-bottom: 40px;
     }
     
     .contact{
@@ -284,7 +281,8 @@ header {
     
     .cta {
         display:flex;
-        align-items: center;
+        justify-content:center;
+        margin-bottom: 40px;
     }
     .cta-text {
         text-align: center;
@@ -326,17 +324,15 @@ header {
         display:flex;
         flex-direction: column;
         justify-content:space-between;
+        margin-bottom: 20px;
     }
     .bottom-content .text-content {
         width: 100%;
-        padding:40px 10px 0px;
+        padding:40px 10px 20px;
     }
     .bottom-content {
         border-bottom: 1px solid black;
         
-    }
-    .cta {
-        margin-bottom: 40px;
     }
     
     .contact{
