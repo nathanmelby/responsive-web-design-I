@@ -73,7 +73,12 @@ h1, h2, h3, h4, h5 {
 header nav {
 	display: flex;
 	flex-grow: 1;
-	justify-content:space-between;
+    justify-content:space-between;
+}
+
+nav a {
+    color: rgb(176, 176, 176);
+    text-decoration: none;
 }
 header {
 	margin: 35px 0px 50px;
@@ -100,10 +105,13 @@ header {
 	vertical-align: middle;
 }
 
-.cta-text .button {
+.cta-text button {
 	background: white;
 	padding: 5px 40px 5px 40px;
-	font-size: 24px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0px;
+    box-shadow: none;
 }
 .cta img {
 	display: flex;
@@ -112,7 +120,7 @@ header {
 }
 
 .top-content {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	margin-bottom: 40px;
 }
 .top-content {
@@ -150,6 +158,13 @@ header {
 	margin-top: 10px;
 }
 
+footer {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:3vh;
+}
+
 /* Tablet */
 @media(max-width: 800px) {
     .container{
@@ -161,7 +176,7 @@ header {
         width: 100%; 
     }
     header {
-        /* margin: 35px 0px 50px; */
+       
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
@@ -174,10 +189,7 @@ header {
         
     }
     
-    .cta-text h1 {
-        font-size: 50pt;
-    }
-    
+ 
     .cta {
         display:flex;
         justify-content: center;
@@ -192,17 +204,19 @@ header {
     .cta-text .button {
         background: white;
         padding: 5px 40px 5px 40px;
-        font-size: 24px;
+       
     }
+
     .cta img {
         display: none;
         
     }
     
-    .top-content {
-        border-top: 1px solid black;
-        margin-bottom: 40px;
-    }
+.main-content {
+    display:flex;
+    flex-direction:column;
+    padding: 0 2vw 0 2vw;
+}
     .top-content {
         display: flex;
         flex-direction: row;
@@ -214,9 +228,8 @@ header {
     }
     
     .main-content .middle-img{
-        /* display:none; */
-        max-width: 100%;
         height: auto;
+        
     }
     .bottom-content {
         display:flex;
@@ -228,22 +241,19 @@ header {
         padding-bottom: 40px;
     }
     .bottom-content {
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         
     }
     
     .contact{
         margin-top:40px;
+        padding: 0 2vw 0 2vw;
     }
     
     .contact p{
         margin-top: 10px;
     }
-    footer {
-        text-align: center;
-        margin: 10px 0px 0px;
-    }
-  
+
 }
 /* Mobile */
 
@@ -254,7 +264,7 @@ header {
 
     header a {
         padding: 10px 0 10px;
-        border:1px solid black;
+        border-bottom:1px solid black;
 
     }
     header nav {
@@ -263,6 +273,7 @@ header {
         flex-direction:column;
         width: 100%; 
         text-align: center;
+        border-top: 1px solid black;
     }
     header {
         /* margin: 35px 0px 50px; */
@@ -276,6 +287,7 @@ header {
         margin-bottom:20px;
         align-items: center;
         margin-left: 0px;
+
     }
     
     .cta-text h1 {
@@ -343,15 +355,14 @@ header {
     }
     
     .contact{
-        margin-top:40px;
+        margin-top:3vh;
     }
     
     .contact p{
         margin-top: 10px
     }
 
-    footer {
-        text-align: center;
+     footer {
         margin: 10px 0px 0px;
     }
 }
