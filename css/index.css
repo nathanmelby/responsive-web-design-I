@@ -73,7 +73,12 @@ h1, h2, h3, h4, h5 {
 header nav {
 	display: flex;
 	flex-grow: 1;
-	justify-content:space-between;
+    justify-content:space-between;
+}
+
+nav a {
+    color: rgb(176, 176, 176);
+    text-decoration: none;
 }
 header {
 	margin: 35px 0px 50px;
@@ -100,10 +105,13 @@ header {
 	vertical-align: middle;
 }
 
-.cta-text .button {
+.cta-text button {
 	background: white;
 	padding: 5px 40px 5px 40px;
-	font-size: 24px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0px;
+    box-shadow: none;
 }
 .cta img {
 	display: flex;
@@ -112,7 +120,7 @@ header {
 }
 
 .top-content {
-	border-top: 1px solid black;
+	border-top: 2px solid black;
 	margin-bottom: 40px;
 }
 .top-content {
@@ -148,6 +156,13 @@ header {
 
 .contact p{
 	margin-top: 10px;
+}
+
+footer {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:3vh;
 }
 
 /* Tablet */
